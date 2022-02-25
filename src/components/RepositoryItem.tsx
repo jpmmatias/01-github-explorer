@@ -1,6 +1,16 @@
 import React from 'react';
 
-export const RepositoryItem = ({ name, description, link }) => {
+interface PropsRepositoryItem {
+	name: string;
+	description: string;
+	link: string;
+}
+
+export const RepositoryItem = ({
+	name,
+	description,
+	link,
+}: PropsRepositoryItem) => {
 	return (
 		<li>
 			<strong>{name ?? 'Sem Nome'}</strong>
