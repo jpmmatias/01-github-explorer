@@ -15,9 +15,8 @@ module.exports = {
 		extensions: ['.js', '.jsx'],
 	},
 	devServer: {
-		static: {
-			directory: path.join(__dirname, 'public'),
-		},
+		static: path.join(__dirname, 'public'),
+		hot: true,
 	},
 	plugins: [
 		new HtmlPLugin({
